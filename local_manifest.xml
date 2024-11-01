@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<manifest>
+
+<remote name="kartik-github"   fetch="https://github.com/kartik-commits" />
+<remote name="kartik-gitlab"   fetch="https://gitlab.com/kartik-commits" />
+<remote name="PE-D-github" fetch="https://github.com/PixelExperience-Devices" />
+
+<!-- redwood -->
+
+  <project path="device/xiaomi/redwood" name="device_xiaomi_redwood" remote="kartik-github" revision="aosp" />
+  <project path="vendor/xiaomi/redwood" name="vendor_xiaomi_redwood" remote="kartik-github" revision="thirteen" />
+  <project path="kernel/xiaomi/sm7325" name="kernel_xiaomi_sm7325" remote="PE-D-github" revision="fourteen" />
+
+<!-- common -->
+
+  <project path="device/xiaomi/sm7325-common" name="device_xiaomi_sm7325-common" remote="kartik-github" revision="aosp" />
+  <project path="vendor/xiaomi/sm7325-common" name="vendor_xiaomi_sm7325-common" remote="kartik-github" revision="fourteen" />
+
+<!-- firmware -->
+
+  <project path="vendor/redwood-firmware" name="redwood-firmware" remote="kartik-gitlab" revision="main" />
+
+<!-- dolby -->
+
+  <project path="hardware/dolby" name="hardware_dolby" remote="kartik-github" revision="A13" />
+
+</manifest>
